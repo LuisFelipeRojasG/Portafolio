@@ -1,6 +1,17 @@
 :root {
-    
-}
+    --paper-light: #ffffff;
+    --default-light: #fafafa;
+    --paper-dark: #424242;
+    --default-dark: #303030;
+    --primary-main: #651fff;
+    --primary-light: #d1c4e9;
+    --primary-dark: #311b92;
+    --secundary-main: #9c27b0;
+    --secundary-light: #e1bee7;
+    --secundary-dark: #4a14bc;
+    --text-first: #000000;
+    --text-second: #ffffff;
+    --text-third: #8f8f8f;
 
 * {
     box-sizing: border-box;
