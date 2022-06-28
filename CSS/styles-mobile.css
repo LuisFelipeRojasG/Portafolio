@@ -1,17 +1,13 @@
 :root {
-    --paper-light: #ffffff;
-    --default-light: #fafafa;
+    --paper-light: #fafafa;
     --paper-dark: #424242;
-    --default-dark: #303030;
-    --primary-main: #651fff;
-    --primary-light: #d1c4e9;
-    --primary-dark: #311b92;
+    --primary-main: #2196f3; 
     --secundary-main: #9c27b0;
-    --secundary-light: #e1bee7;
-    --secundary-dark: #4a14bc;
-    --text-first: #000000;
-    --text-second: #ffffff;
-    --text-third: #8f8f8f;
+    --primary-text-blue: #ffffff;
+    --secundary-text-blue: #b3e5fc;
+    --primary-text-white: #000000;
+    --secundary-text-white: #8f8f8f;
+}
 
 * {
     box-sizing: border-box;
@@ -25,74 +21,148 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
-/************************ Inicio Header ***************/
+/************************ start Header ***************/
 
 .header {
+    *position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
     height: 75px;
-    /*padding: 0 1.5rem*/
-    background-color: royalblue;
+    background-color: var(--primary-main);
+}
+
+.body--header-logo {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid var(--primary-text-blue);
+    border-radius: 5px;
+}
+
+.body--header-logo p{
+    font-size: 2.4rem;
+    line-height: 1.8rem;
+    margin-right: 50%;
+    padding: 5px;
+    color: var(--primary-text-blue);
 }
 
 header img {
-    width: 40px;
-    height: 40px;
-    margin-left: 60px;
+    width: 30px;
+    height: 30px;
+    margin-left: 70%;
 }
 
+/************************ end Header ***************/
 
-/************************ Fin Header ***************/
-
-/************************ Inicio Body ***************/
+/************************ start Body ***************/
 
 body {
-    /*display: flex;*/
+    /*display: flex;
     align-items: center;
     justify-content: center;
     height: 75px;
     /*padding: 0 1.5rem*/
-    background-color:aquamarine;
+    background-color: var(--paper-dark) ;
+}
+
+.body--main_container-bg_color {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: 30%;
+    background-color: var(--primary-main);   
+}
+
+.body--main_container-wave {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    *margin-bottom: 100px;
+    width: 6000px;
+    height: 100%;
+    background-image: url('../assets/images/wd1.svg');
+    *background-position: bottom;
+}
+
+.w1 {
+    animation: w1 7s linear infinite;
+}
+
+.w2 {
+    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+    opacity: 0.5;
+}
+
+@keyframes w1 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+
+@keyframes w2 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+
+@keyframes desplazamiento {
+    0%, 100%{
+        transform: translateY(-25px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+}
+
+.body--main_container h2 {
+    position: absolute;
+    top: 100px;
+    margin: 0 10vw;
+    text-align: center;
+    color: var(--primary-text-blue);
+    font-size: 2rem;
+}
+
+.body--main_container p {
+    position: absolute;
+    top: 165px;
+    left: 25vw;
+    text-align: center;
+    color: var(--secundary-text-blue);
+    font-size: 1.5rem;
+}
+
+.body--main_container-image_container {
+    position: relative;
+}
+
+.body--main_container figure {
+    position: absolute;
+    top: 140px;
+    left: 10vh;
+    width: 200px;
+    height: 250px;
+    border: 3px solid var(--secundary-main);
+    border-radius: 5px;
+    background-image: url();
 }
 
 
-/************************ Fin Body ***************/
+
+/************************ end Body ***************/
 
 
-/************************ Inicio Footer ***************/
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75px;
-    /*padding: 0 1.5rem*/
-    background-color:blueviolet;
-}
-
-
-/************************ Fin Footer ***************/
+/************************ start Footer ***************/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/************************ end Footer ***************/
