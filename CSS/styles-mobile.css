@@ -24,7 +24,6 @@ html {
 /************************ start Header ***************/
 
 .header {
-    *position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +89,9 @@ html {
 /************************ start Body ***************/
 
 body {
-    width: 320px;
+    max-width: 100vw;
     height: auto;
+    overflow-x: hidden;
     background-color: var(--paper-dark) ;
 }
 
@@ -106,7 +106,7 @@ body {
 .body--main_container .body--main_container-bg_color {
     position: absolute;
     top: 75px;
-    width: 100%;
+    width: 6000px;
     height: 30%;
     background-color: var(--primary-main);   
 }
@@ -115,9 +115,9 @@ body {
     position: absolute;
     top: 7vh;
     left: 0;
-    *margin-bottom: 100px;
-    width: 6000px;
+    width: 600%;
     height: 100%;
+    overflow-x: hidden;
     background-image: url('../assets/images/wd1.svg');
     *background-position: bottom;
 }
@@ -230,7 +230,6 @@ body {
     align-items: center;
     width: 100vw;
     height: auto;
-    *background-color: #b3e5fc;
 }
 
 .stack_item {
@@ -238,18 +237,10 @@ body {
     height: auto;
     margin: 5px;
     padding: 5px;
-    border: 5px solid var(--secundary-main);
+    border: 5px solid var(--secundary-text-blue);
     border-radius: 10px;
 }
-/*
-.body--stack_container-icons {
-    display: grid;
-    width: 100vw;
-    height: auto;
-    *grid-template-columns: repeat(2, minmax(1fr));
-    *grid-template-rows: repeat(2, minmax(1fr));
-}
-*/
+
 .stack_item figure img {
     width: 100%;
     margin-bottom: 10px;
@@ -262,6 +253,79 @@ body {
 }
 
 /******************** end stack ******************/
+
+/******************** start proyects ******************/
+
+.body--projects_container {
+    position: absolute;
+    top: 1200px;
+    width:100vw;
+    height: auto;
+    color: var(--primary-text-blue);
+}
+
+.body--projects_container h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.project--card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    height: auto;
+    margin: 0 auto 40px auto;
+    padding: 5px;
+    border: 5px solid var(--secundary-main);
+    border-radius: 10px;
+    *background-color: #b3e5fc;
+}
+
+.card_container {
+    *position: relative;;
+    margin: 5px;
+    border: 1px solid var(--secundary-text-blue);
+    *border-radius: 10px;
+}
+
+.projects_item img{
+    width: 260px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.projects_description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects_description h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.projects_description .card_button {
+    width: 60px;
+    height: 30px;
+    margin: 5px 30px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--secundary-text-blue);
+    background-color: var(--paper-dark);
+    color: var(--secundary-text-blue);
+}
+
+/******************** end proyects ******************/
 
 /************************ end Body ***************/
 
