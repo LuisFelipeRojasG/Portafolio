@@ -21,6 +21,14 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
+/************************ start Body ***************/
+
+body {
+    max-width: 100vw;
+    height: auto;
+    background-color: var(--paper-dark) ;
+}
+
 /************************ start Header ***************/
 
 .header {
@@ -86,40 +94,41 @@ html {
 
 /************************ end Header ***************/
 
-/************************ start Body ***************/
+/************************ start main ***************/
 
-body {
-    max-width: 100vw;
-    height: auto;
-    overflow-x: hidden;
-    background-color: var(--paper-dark) ;
+.main {
+    width: 100vw;
+    height: 3000px;
 }
 
 .body--main_container {
     display: flex;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 100vw;
+    height: 15%;
+    overflow: hidden;
+    *padding-bottom: 100px;
+    *padding-top: 300px;
 }
 
 /***************** start wave ************************/
 
-.body--main_container .body--main_container-bg_color {
+.body--main_container-bg_color {
     position: absolute;
-    top: 75px;
-    width: 6000px;
-    height: 30%;
+    top: 0;
+    width: 100%;
+    height: 50%;
     background-color: var(--primary-main);   
 }
 
 .body--main_container-wave {
     position: absolute;
-    top: 7vh;
+    top: 150px;
     left: 0;
-    width: 600%;
+    width: 6000px;
     height: 100%;
-    overflow-x: hidden;
     background-image: url('../assets/images/wd1.svg');
-    *background-position: bottom;
+    background-position: bottom;
 }
 
 .w1 {
@@ -160,7 +169,7 @@ body {
 
 /***************** end wave ************************/
 
-.body--main_container h1 {
+.body--main_container-introd h1 {
     position: absolute;
     top: 100px;
     left: 10vw;
@@ -170,7 +179,7 @@ body {
     font-size: 2.1rem;
 }
 
-.body--main_container p {
+.body--main_container-introd p {
     position: absolute;
     top: 175px;
     left: 20vw;
