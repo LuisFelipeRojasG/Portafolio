@@ -12,13 +12,22 @@
 <body>
     <header class="header">
         <div class="body--header-logo"><p>L</p></div>
+        <nav class="body--header-bars_links">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#body--stack_container">Stack</a></li>
+                <li><a href="#body--projects_container">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="body--header-bars_menu">
             <span class="bars_menu-line1"></span>
             <span class="bars_menu-line2"></span>
             <span class="bars_menu-line3"></span>
         </div>
     </header>
-    <main class="main">
+    <main id="main" class="main">
         <section class="body--main_container">
             <div class="wave">
                 <!-- start wave -->
@@ -35,7 +44,7 @@
                 <img src="./assets/images/LFR-Transparente.png" alt="Luis Felipe Rojas">
             </figure>
         </section>
-        <section class="body--stack_container">
+        <section id="body--stack_container" class="body--stack_container">
             <h2>My Tech Stack</h2>
             <p>Technologies I've working recently</p>
             <div class="body--stack_container-icons">
@@ -65,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="body--projects_container">
+        <section id="body--projects_container" class="body--projects_container">
             <h2>My Proyects</h2>
             <div class="project--card">
                 <div class="card_container"> 
@@ -75,7 +84,7 @@
                         </figure>
                     </div>
                     <div class="projects_description">
-                        <h3>Landing page for smartphones
+                        <h3>BatataBit Crypto landing page - Mobile First
                         </h3>
                         <a class="card_button" href="https://luisfeliperojasg.github.io/mobile-first-batatabit/">Live</a>
                         <a class="card_button" href="https://github.com/LuisFelipeRojasG/mobile-first-batatabit">GIT</a>
@@ -86,7 +95,22 @@
                 <div class="card_container">
                     <div class="projects_item">
                         <figure>
-                            <img src="./assets/images/laptop twitter.jpg" alt="twitter">
+                            <img src="./assets/images/laptoptwitter.png" alt="twitter">
+                        </figure>
+                    </div>
+                    <div class="projects_description">
+                        <h3>Landing page for smartphones
+                        </h3>
+                        <a class="card_button" href="https://luisfeliperojasg.github.io/twitter-clon/">Live</a>
+                        <a class="card_button" href="https://github.com/LuisFelipeRojasG/twitter-clon">GIT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project--card">
+                <div class="card_container">
+                    <div class="projects_item">
+                        <figure>
+                            <img src="./assets/images/laptoptwitter.png" alt="twitter">
                         </figure>
                     </div>
                     <div class="projects_description">
@@ -101,7 +125,21 @@
     </main>
     <script src="./js/scripts.js"></script>
 </body>
-<footer>
-    <h3>Made in Colombia by Luis Felipe Rojas</h3>
+<footer id="contact">
+        <a href="https://www.linkedin.com/in/luis-felipe-rojas-gonzalez-69213b66/">
+            <figure class="footer--links">
+                <img src="./assets/icons/signo-de-linkedin.png" alt="Linkedin">
+            </figure>
+        </a>
+        <a href="https://github.com/LuisFelipeRojasG">
+            <figure class="footer--links">
+                <img src="./assets/icons/signo-de-github.png" alt="GitHub">
+            </figure>
+        </a>
+        <a href="https://twitter.com/latisstingrey">
+            <figure class="footer--links">
+                <img src="./assets/icons/signo-de-twitter.png" alt="Twitter">
+            </figure>
+        </a>
 </footer>
 </html>
