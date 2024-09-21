@@ -14,8 +14,8 @@
         <div class="body--header-logo"><p>L</p></div>
         <nav class="body--header-bars_links">
             <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#body--stack_container">Stack</a></li>
+                <li><a href=".main">Home</a></li>
+                <li><a href="#body--main_container-stack">Stack</a></li>
                 <li><a href="#body--projects_container">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -28,119 +28,132 @@
         </div>
     </header>
     <main id="main" class="main">
-        <section class="body--main_container">
-            <div class="wave">
-                <!-- start wave -->
-                <div class="body--main_container-bg_color"></div>
-                <div class="body--main_container-wave w1"></div>
-                <div class="body--main_container-wave w2"></div>
-                <!-- end wave -->
-            </div>
-        </section>
-        <section class="body--main_container-introd">
-            <h1>Hi, I'm Luis Felipe Rojas, Frontend Developer</h1>
-            <p>Building things for web</p>
-            <figure class="body--main_container-main_image">
-                <img src="./assets/images/LFR-Transparente.png" alt="Luis Felipe Rojas">
-            </figure>
-        </section>
-        <section id="body--stack_container" class="body--stack_container">
-            <h2>My Tech Stack</h2>
-            <p>Technologies I've working recently</p>
-            <div class="body--stack_container-icons">
-                <div class="stack_item">
-                    <figure>
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5">
-                    </figure>
-                    <p>HTML</p>
+        <div class="body--main_container">
+            <section class="body--main_container-anim">
+                <div class="wave">
+                    <!-- start wave -->
+                    <div class="body--main_container-bg_color"></div>
+                    <div class="body--main_container-wave w1"></div>
+                    <div class="body--main_container-wave w2"></div>
+                    <!-- end wave -->
                 </div>
-                <div class="stack_item">
-                    <figure>
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3">
-                    </figure>
-                    <p>CSS</p>
-                </div>
-                <div class="stack_item">
-                    <figure>
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
-                    </figure>
-                    <p>JavaScript</p>
-                </div>
-                <div class="stack_item">
-                    <figure>
-                        <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
-                    </figure>
-                    <p>REACT</p>
-                </div>
-            </div>
-        </section>
-        <section id="body--projects_container" class="body--projects_container">
-            <h2>My Proyects</h2>
-            <div class="project--card">
-                <div class="card_container"> 
-                    <div class="projects_item">
+            </section>
+            <section class="body--main_container-introd">
+                <h1>Hi, I'm Luis Felipe Rojas, Frontend Developer</h1>
+                <p>Building things for web</p>
+                <figure class="body--main_container-main_image">
+                    <img src="./assets/images/LFR-Transparente.png" alt="Luis Felipe Rojas">
+                </figure>
+            </section>
+            <section id="body--main_container-stack" class="body--main_container-stack">
+                <h2>My Tech Stack</h2>
+                <p>Technologies I've working recently</p>
+                <div class="body--main_container-stackicons">
+                    <div class="stack_item">
                         <figure>
-                            <img src="./assets/images/BatatabitCard.png" alt="batatabit">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5">
                         </figure>
+                        <p>HTML</p>
                     </div>
-                    <div class="projects_description">
-                        <h3>BatataBit Crypto landing page - Mobile First
-                        </h3>
-                        <a class="card_button" href="https://luisfeliperojasg.github.io/mobile-first-batatabit/">Live</a>
-                        <a class="card_button" href="https://github.com/LuisFelipeRojasG/mobile-first-batatabit">GIT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project--card">
-                <div class="card_container">
-                    <div class="projects_item">
+                    <div class="stack_item">
                         <figure>
-                            <img src="./assets/images/laptoptwitter.png" alt="twitter">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3">
                         </figure>
+                        <p>CSS</p>
                     </div>
-                    <div class="projects_description">
-                        <h3>Landing page for smartphones
-                        </h3>
-                        <a class="card_button" href="https://luisfeliperojasg.github.io/twitter-clon/">Live</a>
-                        <a class="card_button" href="https://github.com/LuisFelipeRojasG/twitter-clon">GIT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project--card">
-                <div class="card_container">
-                    <div class="projects_item">
+                    <div class="stack_item">
                         <figure>
-                            <img src="./assets/images/platziTravelCard.png" alt="platzi Travel">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
                         </figure>
+                        <p>JavaScript</p>
                     </div>
-                    <div class="projects_description">
-                        <h3>Landing page in REACT
-                        </h3>
-                        <a class="card_button" href="https://luisfeliperojasg.github.io/platzitravel/">Live</a>
-                        <a class="card_button" href="https://github.com/LuisFelipeRojasG/platzitravel">GIT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project--card">
-                <div class="card_container">
-                    <div class="projects_item">
+                    <div class="stack_item">
                         <figure>
-                            <img src="./assets/images/todoMachineCard.png" alt="To Do Machine">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
                         </figure>
+                        <p>REACT</p>
                     </div>
-                    <div class="projects_description">
-                        <h3>Landing page in REACT
-                        </h3>
-                        <a class="card_button" href="https://luisfeliperojasg.github.io/todoMachine/">Live</a>
-                        <a class="card_button" href="https://github.com/LuisFelipeRojasG/todoMachine">GIT</a>
+                    <div class="stack_item">
+                        <figure>
+                            <img src="assets/icons/tailwind-css.svg"
+                            alt="Tailwind">
+                        </figure>
+                        <p>Tailwind</p>
+                    </div>
+                    <div class="stack_item">
+                        <figure>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
+                        </figure>
+                        <p>REACT</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="body--main_container-projects" class="body--main_container-projects">
+                <h2>My Projects</h2>
+                <div class="project--card">
+                    <div class="card_container"> 
+                        <div class="projects_item">
+                            <figure>
+                                <img src="./assets/images/BatatabitCard.png" alt="batatabit">
+                            </figure>
+                        </div>
+                        <div class="projects_description">
+                            <h3>BatataBit Crypto landing page - Mobile First
+                            </h3>
+                            <a class="card_button" href="https://luisfeliperojasg.github.io/mobile-first-batatabit/">Live</a>
+                            <a class="card_button" href="https://github.com/LuisFelipeRojasG/mobile-first-batatabit">GIT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project--card">
+                    <div class="card_container">
+                        <div class="projects_item">
+                            <figure>
+                                <img src="./assets/images/laptoptwitter.png" alt="twitter">
+                            </figure>
+                        </div>
+                        <div class="projects_description">
+                            <h3>Landing page for smartphones
+                            </h3>
+                            <a class="card_button" href="https://luisfeliperojasg.github.io/twitter-clon/">Live</a>
+                            <a class="card_button" href="https://github.com/LuisFelipeRojasG/twitter-clon">GIT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project--card">
+                    <div class="card_container">
+                        <div class="projects_item">
+                            <figure>
+                                <img src="./assets/images/platziTravelCard.png" alt="platzi Travel">
+                            </figure>
+                        </div>
+                        <div class="projects_description">
+                            <h3>Landing page in REACT
+                            </h3>
+                            <a class="card_button" href="https://luisfeliperojasg.github.io/platzitravel/">Live</a>
+                            <a class="card_button" href="https://github.com/LuisFelipeRojasG/platzitravel">GIT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project--card">
+                    <div class="card_container">
+                        <div class="projects_item">
+                            <figure>
+                                <img src="./assets/images/todoMachineCard.png" alt="To Do Machine">
+                            </figure>
+                        </div>
+                        <div class="projects_description">
+                            <h3>Landing page in REACT
+                            </h3>
+                            <a class="card_button" href="https://luisfeliperojasg.github.io/todoMachine/">Live</a>
+                            <a class="card_button" href="https://github.com/LuisFelipeRojasG/todoMachine">GIT</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    <script src="./js/scripts.js"></script>
-</body>
-<footer id="contact">
+    <footer id="contact">
         <a href="https://www.linkedin.com/in/luis-felipe-rojas-gonzalez-69213b66/">
             <figure class="footer--links">
                 <img src="./assets/icons/signo-de-linkedin.png" alt="Linkedin">
@@ -156,5 +169,7 @@
                 <img src="./assets/icons/signo-de-twitter.png" alt="Twitter">
             </figure>
         </a>
-</footer>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>
 </html>
