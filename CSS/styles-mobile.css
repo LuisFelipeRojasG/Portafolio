@@ -141,12 +141,7 @@ body {
 .body--main_container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    *grid-template-areas: 
-        "introd"
-        "stack"
-        "projects"
-    ;
+    grid-template-rows: auto auto auto auto;
     overflow: hidden;
 }
 
@@ -215,7 +210,7 @@ body {
 }
 
 /***************** end wave ************************/
-
+/*************** start introd **********************/
 .body--main_container-introd {
     grid-row: 1/2;
     height: 450px;
@@ -229,13 +224,13 @@ body {
     padding: 25px;
     text-align: center;
     color: var(--primary-text-blue);
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
 .body--main_container-introd p {
     padding: 20px;
     text-align: center;
-    color: var(--secundary-text-blue);
+    color: var(--primary-text-blue);
     font-size: 1.8rem;
 }
 
@@ -255,11 +250,49 @@ body {
     border: 1px solid var(--secundary-text-blue);
     border-radius: 10px;
 }
+/**************** end introd ***********************/
+/*************** start about **********************/
+.body--main_container-about {
+    grid-row: 3/4;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+.body--main_container-about h2 {
+    padding: 25px;
+    text-align: center;
+    color: var(--primary-text-blue);
+    font-size: 2.5rem;
+}
+
+.body--main_container-about p {
+    padding: 20px;
+    text-align: justify;
+    color: var(--secundary-text-blue);
+    font-size: 1.8rem;
+}
+
+.CV_Button {
+    width: 160px;
+    height: 50px;
+    margin: 5px 30px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--secundary-text-blue);
+    background-color: var(--paper-dark);
+    color: var(--secundary-text-blue);
+}
+
+/**************** end about ***********************/
 /******************** start stack ******************/
 
 .body--main_container-stack {
-    grid-row: 2/3;
+    grid-row: 5/6;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -293,10 +326,11 @@ body {
 }
 
 .stack_item {
-    width: 45vw;
-    height: auto;
-    max-width: 154px;
-    max-height: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 155px;
+    height: 205px;
     margin: 5px;
     padding: 5px;
     border: 5px solid var(--secundary-text-blue);
@@ -305,7 +339,7 @@ body {
 
 .stack_item figure img {
     width: 100%;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .stack_item p {
@@ -319,7 +353,7 @@ body {
 /******************** start proyects ******************/
 
 .body--main_container-projects {
-    grid-row: 3/4;
+    grid-row: 7/8;
     width:100vw;
     height: auto;
     margin: 50px 0;
@@ -345,17 +379,14 @@ body {
     padding: 5px;
     border: 5px solid var(--secundary-main);
     border-radius: 10px;
-    *background-color: #b3e5fc;
 }
 
 .card_container {
-    *position: relative;
     margin: 5px;
     border: 1px solid var(--secundary-text-blue);
-    *border-radius: 10px;
 }
 
-.projects_item img{
+.container_item img{
     width: 100%;
     height: auto;
     margin-bottom: 5px;
@@ -369,11 +400,9 @@ body {
 }
 
 .projects_description h3{
-    *width: auto;
     font-size: 1.5rem;
     margin-bottom: 10px;
     padding: 5px;
-    *text-align: center;
 }
 
 .projects_description .card_button {
