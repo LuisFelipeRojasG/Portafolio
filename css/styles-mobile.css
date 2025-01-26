@@ -1,6 +1,7 @@
 :root {
     --paper-light: #fafafa;
     --paper-dark: #424242;
+    --paper-dark-secundary: #212121;
     --primary-main: #2196f3; 
     --secundary-main: #9c27b0;
     --primary-text-blue: #ffffff;
@@ -41,12 +42,15 @@ body {
 
 .header {
     grid-area: header;
+    position: fixed;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 75px;
     background-color: var(--primary-main);
+    
 }
 
 .body--header-logo {
@@ -136,6 +140,7 @@ body {
     grid-area: main;
     width: 100vw;
     height: auto;
+    margin-top: 70px;
 }
 
 .body--main_container {
@@ -153,6 +158,7 @@ body {
     position: relative;
     width: 100vw;
     height: 450px;
+    margin-bottom: 140px;
     overflow: hidden;
 }
 
@@ -229,7 +235,7 @@ body {
 
 .body--main_container-introd p {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     color: var(--primary-text-blue);
     font-size: 1.8rem;
 }
@@ -241,7 +247,7 @@ body {
     padding: 10px;
     border: 5px solid var(--secundary-main);
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .body--main_container-main_image img{
@@ -250,26 +256,44 @@ body {
     border: 1px solid var(--secundary-text-blue);
     border-radius: 10px;
 }
+
+.body--main_container-main_ubication {
+    width: 150px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body--main_container-introd h4 {
+    font-size: larger;
+    color: var(--primary-text-blue);
+}
+
+
 /**************** end introd ***********************/
 /*************** start about **********************/
 .body--main_container-about {
     grid-row: 3/4;
-    height: 450px;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    background-color: var(--paper-dark-secundary);
 }
 
 .body--main_container-about h2 {
     padding: 25px;
     text-align: center;
-    color: var(--primary-text-blue);
+    color: var(--secundary-text-blue);
     font-size: 2.5rem;
 }
 
 .body--main_container-about p {
-    padding: 20px;
+    padding: 25px;
     text-align: justify;
     color: var(--secundary-text-blue);
     font-size: 1.8rem;
@@ -278,7 +302,7 @@ body {
 .CV_Button {
     width: 160px;
     height: 50px;
-    margin: 5px 30px;
+    margin: 25px 30px;
     padding-top: 13px;
     text-align: center;
     font-size: 2rem;
@@ -297,7 +321,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: auto;
-    margin: 20px 0;
+    padding: 40px 0;
     color: var(--primary-text-blue);
 }
 
@@ -356,8 +380,9 @@ body {
     grid-row: 7/8;
     width:100vw;
     height: auto;
-    margin: 50px 0;
+    padding: 70px 0;
     color: var(--primary-text-blue);
+    background-color: var(--paper-dark-secundary);
 }
 
 .body--main_container-projects h2 {
