@@ -368,7 +368,7 @@ body {
 
 .stack_item p {
     margin: 0;
-    font-size: rem;
+    font-size: 20px;
     color: var(--primary-text-blue);
 }
 
