@@ -1,12 +1,16 @@
 const menu = document.querySelector(".body--header-bars_menu");
 
+var menuNav = document.querySelector(".body--header-bars_links");
+
 menu.addEventListener("click", animateBars);
+
+menuNav.addEventListener("click", closeLinks);
 
 var barsMenuLine1 = document.querySelector(".bars_menu-line1");
 var barsMenuLine2 = document.querySelector(".bars_menu-line2");
 var barsMenuLine3 = document.querySelector(".bars_menu-line3");
-var menuNav = document.getElementsByClassName("body--header-bars_links")[0];
 
+//Para abrir el menu de navegacion
 function animateBars() {
     barsMenuLine1.classList.toggle("active_bars_menu-line1");
     barsMenuLine2.classList.toggle("active_bars_menu-line2");
@@ -16,4 +20,11 @@ function animateBars() {
 
 }
 
-
+//Para cerrar el menu de navegacion
+function closeLinks() {
+    menuNav.classList.remove("active_nav");
+    
+    barsMenuLine1.classList.toggle("active_bars_menu-line1");
+    barsMenuLine2.classList.toggle("active_bars_menu-line2");
+    barsMenuLine3.classList.toggle("active_bars_menu-line3");
+}
