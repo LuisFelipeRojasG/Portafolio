@@ -1,0 +1,29 @@
+.header {
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+
+.body--header-bars_menu {
+    display: none;
+}
+
+.body--header-bars_links {
+    position: relative;
+    top: 0;
+    width: auto;
+    visibility: visible;
+}
+
+.body--header-bars_links ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body--header-bars_links ul li {
+    width: auto;
+    margin: 0 30px;
+}
+

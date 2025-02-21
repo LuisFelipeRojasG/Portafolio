@@ -102,7 +102,6 @@ body {
 .body--header-bars_menu {
     width: 40px;
     height: 35px;
-    padding-top: 1pz;
     padding-left: 5px;
     margin-left: 70%;
     cursor: pointer;
@@ -438,7 +437,6 @@ body {
 
 .projects_description h3{
     font-size: 1.5rem;
-    *margin-bottom: 10px;
     padding: 5px;
 }
 
@@ -471,6 +469,9 @@ body {
 /******************** end proyects ******************/
 
 /************************ end Body ***************/
+
+/************************ start dialog ***************/
+
 
 
 /************************ start Footer ***************/
