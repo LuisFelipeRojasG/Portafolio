@@ -259,11 +259,11 @@ body {
     border-radius: 10px;
 }
 
-.body--main_container-main_ubication {
-    width: 150px;
+.body--main_container-main_info {
+    width: auto;
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -299,6 +299,16 @@ body {
     text-align: justify;
     color: var(--secundary-text-blue);
     font-size: 1.8rem;
+}
+
+.body--main_container-about_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    margin-top: 25px;
 }
 
 .CV_Button {
@@ -348,7 +358,7 @@ body {
     align-items: center;
     width: 100vw;
     height: auto;
-    bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .stack_item {

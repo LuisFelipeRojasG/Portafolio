@@ -1,3 +1,5 @@
+/************************ start Header ***************/
+
 .header {
     justify-content: space-between;
     padding: 0 30px;
@@ -26,4 +28,60 @@
     width: auto;
     margin: 0 30px;
 }
+
+/************************ end Header ***************/
+
+/************************ start introd ***************/
+
+.body--main_container-introd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.body--main_container-main_image {
+    grid-column: 2 / 2;
+    justify-items: flex-start;
+}
+
+.body--main_container-introd h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+
+.body--main_container-introd p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    text-align: center;
+}
+
+.body--main_container-main_info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+}
+
+/************************ end introd ***************/
+
+/**************** start about **********************/
+.body--main_container-about p {
+    padding: 0 100px;
+}
+/****************** end about **********************/
+
+/******************** start stack ******************/
+.body--main_container-stackicons {
+    padding: 0 50px;
+}
+/******************** end stack ******************/
+
+/******************** start proyects ******************/
+.container-projects {
+    padding: 0 50px;
+}
+
+/******************** end proyects ******************/
 
