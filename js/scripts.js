@@ -29,10 +29,10 @@ function closeLinks() {
     barsMenuLine3.classList.toggle("active_bars_menu-line3");
 }
 
-//Para el modal de las certificaciones
+/*Para el modal de las certificaciones
 const certiButton = document.getElementById("certifications");
 const closemodal = document.getElementById("close-modal");
 
 certiButton.addEventListener("click", () => {
     window.open('../pages/certindex.html', 'ventana1')
-});
+});*/
