@@ -15,10 +15,10 @@
       <div class="body--header-logo"><p>L</p></div>
       <nav class="body--header-bars_links">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#body--main_container-education">Education</a></li>
-          <li><a href="#body--main_container-stack">Stack</a></li>
-          <li><a href="#body--main_container-projects">Projects</a></li>
+          <li><a href="#line-about">About</a></li>
+          <li><a href="#line-education">Education</a></li>
+          <li><a href="#line-stack">Stack</a></li>
+          <li><a href="#line-projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
           <div>
             <figure class="body--main_container-main_image">
               <img
-                src="./assets/images/LFR-Transparente.png"
+                src="./assets/images/LFR-transparente.png"
                 alt="Luis Felipe Rojas"
               />
             </figure>
@@ -51,7 +51,7 @@
           <div class="body--main_container-main_info">
             <h1>Hi, I'm Luis Felipe Rojas</h1>
             <p>
-              I'm a Frontend developer (React) building responsive things for web
+              Frontend developer (React) building responsive things for web
             </p>
             <figure>
               <img
@@ -59,13 +59,14 @@
                 alt="Ubicación Medellín - Colombia"
               />
             </figure>
-            <h4>Medellín - Colombia</h4>
+            <h2>Medellín - Colombia</h2>
           </div>
         </section>
+        <hr id="line-about" />
         <section class="body--main_container-about">
           <h1>About me</h1>
           <p>
-            I’m a person with more that 15 years of experience in an electronic
+            I have more that 15 years of experience in an electronic
             company that creates and sales different solutions for many
             industries. In my different positions during these years, I have
             been increasing my skills working with the engineering team
@@ -77,87 +78,117 @@
             day.
           </p>
           <div class="body--main_container-about_buttons">
-            <a
+            <button
               class="CV_Button"
-              href="./document/HojadeVidaLUISFELIPEROJASGONZÁLEZ.pdf"
-              download="HojadeVidaLUISFELIPEROJASGONZÁLEZ"
+              href="./document/CV - Luis Felipe Rojas_Frontend Developer.pdf"
+              download="CV-Luis Felipe Rojas_Frontend Developer"
               >Download CV
-            </a>
-            <a 
+            </button>
+            <button 
               class="CV_Button"
               id="certifications"
-              href="https://drive.google.com/drive/folders/1zxOtViYtOSnop_KM7zDgC8Bsm5nKeW9J"
               >
               Certifications
-            </a>
+            </button>
           </div>
         </section>
+        <hr id="line-education" />
         <section id="body--main_container-education" class="body--main_container-education">
-          <article class="body--main_container-educationlist">
-            <h1>Education</h1>
-            <div>
-              <div class="educationlist--item">
-                <h2>Front-end Developer</h2>
-                <p>
-                  META
-                </p>
-                <p>
-                  2025
-                </p>
+          <h1 id="Education">Education</h1>
+          <div class="body--main_container-education_container">
+            <article class="body--main_container-educationlist">
+              <div>
+                <div class="educationlist--item">
+                  <h2>Front-end Developer</h2>
+                  <p>
+                    META
+                  </p>
+                  <p>
+                    2025
+                  </p>
+                </div>
+                <div class="educationlist--item">
+                  <h2>React Developer</h2>
+                  <p>
+                    Platzi
+                  </p>
+                  <p>
+                    2023 - 2024
+                  </p>
+                </div>
+                <div class="educationlist--item">
+                  <h2>Technical Analist and Programmer</h2>
+                  <p>
+                    Censa
+                  </p>
+                  <p>
+                    2015
+                  </p>
+                </div>
               </div>
-              <div class="educationlist--item">
-                <h2>React Developer</h2>
-                <p>
-                  Platzi
-                </p>
-                <p>
-                  2023 - 2024
-                </p>
+            </article>
+            <article class="body--main_container-languageicons">
+              <div class="language_container">
+                <div class="language_item">
+                  <figure>
+                    <img
+                      src="assets/icons/Español.png"
+                      alt="Español Nativo"
+                    />
+                  </figure>
+                  <p>Español Nativo</p>
+                </div>
+                <div class="language_item">
+                  <figure>
+                    <img
+                      src="assets/icons/Ingles B1.png"
+                      alt="English B1+"
+                    />
+                  </figure>
+                  <p>English B1+</p>
+                </div>
+                <div class="language_item">
+                  <figure>
+                    <img
+                      src="assets/icons/Frances.png"
+                      alt="French A1"
+                    />
+                  </figure>
+                  <p>French A1</p>
+                </div>
               </div>
-              <div class="educationlist--item">
-                <h2>Technical Analist and Programmer</h2>
-                <p>
-                  Censa
-                </p>
-                <p>
-                  2015
-                </p>
+            </article>
+            <article class="body--main_container-languagelevel">
+              <div class="language_container">
+                <div class="language_level">
+                  <p>Español Nativo</p>
+                  <figure>
+                    <img
+                      src="assets/icons/Español.png"
+                      alt="Español Nativo"
+                    />
+                  </figure>
+                  <figure>
+                    <img
+                      src="assets/images/españollevel.png"
+                      alt="Español level"
+                    />
+                  </figure>
+                </div>
+                <div class="educationlist--item">
+                  <h2>Technical Analist and Programmer</h2>
+                  <p>
+                    Censa
+                  </p>
+                  <p>
+                    2015
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="body--main_container-educationicons">
-            <h1>Languages</h1>
-            <div class="language_container">
-              <div class="language_item">
-                <figure>
-                  <img
-                    src="assets/icons/Español.png"
-                    alt="Español Nativo"
-                  />
-                </figure>
-                <p>Español Nativo</p>
-              </div>
-              <div class="language_item">
-                <figure>
-                  <img
-                    src="assets/icons/Ingles B1.png"
-                    alt="English B1+"
-                  />
-                </figure>
-                <p>English B1+</p>
-              </div>
-              <div class="language_item">
-                <figure>
-                  <img
-                    src="assets/icons/Frances.png"
-                    alt="French A1"
-                  />
-                </figure>
-                <p>French A1</p>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </section>
+        <hr id="line-stack" />
         <section
           id="body--main_container-stack"
           class="body--main_container-stack"
@@ -243,6 +274,7 @@
             </article>
           </div>
         </section>
+        <hr id="line-projects" />
         <section
           id="body--main_container-projects"
           class="body--main_container-projects"
@@ -266,16 +298,16 @@
                   <h3>
                     This website implementing a booking form connected an API
                   </h3>
-                  <p>
-                    HTML
-                    - CSS 
-                    - JavaScript
-                    - REACT
-                    - Tailwind
-                    - Node js
-                    - Express
-                    - MongoDB
-                  </p>
+                  <figure>
+                    <img src="./assets/icons/html-icon.svg" alt="Html">
+                    <img src="./assets/icons/css-icon.svg" alt="Css">
+                    <img src="./assets/icons/javascript-icon.svg" alt="JavaScript">
+                    <img src="./assets/icons/react-js-icon.svg" alt="React">
+                    <img src="./assets/icons/tailwind-css.svg" alt="Tailwind">
+                    <img src="./assets/icons/express-icon.svg" alt="Express.js">
+                    <img src="./assets/icons/nodejs-icon.svg" alt="Node.js">
+                    <img src="./assets/icons/mongodb-icon.svg" alt="MongoDB">
+                  </figure>
                   <footer>
                     <a
                     class="card_button"
@@ -308,18 +340,16 @@
                     <h1>Platzi Travel</h1>
                   </header>
                   <h3>
-                    Landing page of an travel agency created in REACT
+                    Landing page of an travel agency created in React
                     and Tailwind to improve new web developer skills
                   </h3>
-                  <p>
-                    HTML
-                    - CSS 
-                    - JavaScript
-                    - REACT
-                    - Tailwind
-                    - Mobile First
-                    - Responsive Design
-                  </p>
+                  <figure>
+                    <img src="./assets/icons/html-icon.svg" alt="Html">
+                    <img src="./assets/icons/css-icon.svg" alt="Css">
+                    <img src="./assets/icons/javascript-icon.svg" alt="JavaScript">
+                    <img src="./assets/icons/react-js-icon.svg" alt="React">
+                    <img src="./assets/icons/tailwind-css.svg" alt="Tailwind">
+                  </figure>
                   <footer>
                     <a
                       class="card_button"
@@ -355,15 +385,13 @@
                     Landing page in REACT and Tailwind based on a figma
                     design, mobile first and responsive.
                   </h3>
-                  <p>
-                    HTML
-                    - CSS 
-                    - JavaScript
-                    - REACT
-                    - Tailwind
-                    - Mobile First
-                    - Responsive Design
-                  </p>
+                  <figure>
+                    <img src="./assets/icons/html-icon.svg" alt="Html">
+                    <img src="./assets/icons/css-icon.svg" alt="Css">
+                    <img src="./assets/icons/javascript-icon.svg" alt="JavaScript">
+                    <img src="./assets/icons/react-js-icon.svg" alt="React">
+                    <img src="./assets/icons/tailwind-css.svg" alt="Tailwind">
+                  </figure>
                   <footer>
                     <a
                       class="card_button"
@@ -399,13 +427,11 @@
                     Project mobile first, base in a Figma prototype. 
                     This landing page is a trading platform for crypto currency.
                   </h3>
-                  <p>
-                    HTML
-                    - CSS 
-                    - JavaScript
-                    - Mobile First
-                    - Responsive Design
-                  </p>
+                  <figure>
+                    <img src="./assets/icons/html-icon.svg" alt="Html">
+                    <img src="./assets/icons/css-icon.svg" alt="Css">
+                    <img src="./assets/icons/javascript-icon.svg" alt="JavaScript">
+                  </figure>
                   <footer>
                     <a
                       class="card_button"
@@ -438,13 +464,11 @@
                     This landing page clone of Twitter Sign In is a project
                     to improve my web developer skills
                   </h3>
-                  <p>
-                    HTML
-                    - CSS 
-                    - JavaScript
-                    - Mobile First
-                    - Responsive Design
-                  </p>
+                  <figure>
+                    <img src="./assets/icons/html-icon.svg" alt="Html">
+                    <img src="./assets/icons/css-icon.svg" alt="Css">
+                    <img src="./assets/icons/javascript-icon.svg" alt="JavaScript">
+                  </figure>
                   <footer>
                     <a
                       class="card_button"
@@ -465,6 +489,27 @@
           </div>
         </section>
       </div>
+      <dialog class="dialogCertifications" id="dialogCertifications">
+        <Section class="dialogCertifications--slider">
+          <div class="dialogCertifications--slider_container">
+            <article class="dialogCertifications--slider_card">
+              <img src="./assets/certifications/certification_html_css.png" alt="Certification HTML and CSS" />
+            </article>
+            <article>
+              <img src="./assets/certifications/certification_react.png" alt="Certification React" />
+            </article>
+            <article>
+              <img src="./assets/certifications/certification_tailwind.png" alt="Certification Tailwind" />
+            </article>
+            <article>
+              <img src="./assets/certifications/certification_git.png" alt="Certification Git" />
+            </article>
+          </div>
+          <span class="arrowLeftCertifications slider_button"></span>
+          <span class="arrowRightCertifications slider_button"></span>
+        </Section>
+        <button class="close" id="closeCertifications">Close</button>
+      </dialog>
     </main>
     <footer id="contact">
       <a

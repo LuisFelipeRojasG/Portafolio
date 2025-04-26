@@ -72,8 +72,38 @@
 }
 /****************** end about **********************/
 
+/******************** start education ******************/
+.body--main_container-education_container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.body--main_container-languageicons {
+    display: none;
+}
+
+.body--main_container-languagelevel {
+    display: flex;
+    flex-direction: column;
+}
+
+.language_container{
+    width: 100%;
+}
+
+.language_level figure img  {
+    width: 150px;
+}
+/******************** end education ******************/
+
 /******************** start stack ******************/
 .body--main_container-stackicons {
+    width: auto;
+    flex-direction: row;
     padding: 0 50px;
 }
 /******************** end stack ******************/
