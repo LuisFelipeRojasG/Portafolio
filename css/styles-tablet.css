@@ -1,4 +1,17 @@
+/******************** start certifications ******************/
 
+.certifications_container {
+    width: 80vw;
+    height: 400px;
+}
+
+.card-wrapper {
+    margin: 0 60px;
+}
+
+/******************** end certifications ******************/
+
+/******************** start proyects ******************/
 .container-projects {
     display: flex;
     flex-direction: row;
@@ -7,4 +20,9 @@
     align-items: center;
     margin: 0;
 }
+
+/******************** end proyects ******************/
+
+
+
 

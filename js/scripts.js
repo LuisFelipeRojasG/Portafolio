@@ -29,15 +29,44 @@ function closeLinks() {
     barsMenuLine3.classList.toggle("active_bars_menu-line3");
 }
 
-//Para el modal de las certificaciones
-const dialogCertifications = document.getElementById("dialogCertifications");
-const certiButton = document.getElementById("certifications");
-const closedialog = document.getElementById("closeCertifications");
+//Para el slider de las certificaciones
 
-certiButton.addEventListener("click", () => {
-    dialogCertifications.style.display = "grid";
-});
+new Swiper('.card-wrapper', {
 
-closedialog.addEventListener("click", () => {
-    dialogCertifications.style.display = "none";
-});
+    loop: true,
+    spaceBetween: 30,
+  
+    // Pagination points
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    //Responsive breakpoints
+    breakpoints: {
+        
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 2,
+        },
+        1350: {
+            slidesPerView: 3,
+        },
+    }
+  
+  });
+
+
+
+
+
+

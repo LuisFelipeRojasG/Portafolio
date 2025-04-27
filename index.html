@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/styles-tablet.css" media="screen and (min-width: 768px)" />
     <link rel="stylesheet" href="./css/styles-desktop.css" media="screen and (min-width: 1024px)" />
     <link rel="icon" href="./assets/icons/code-solid.svg" class="rel" />
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Luis Felipe Rojas</title>
   </head>
   <body>
@@ -17,6 +20,7 @@
         <ul>
           <li><a href="#line-about">About</a></li>
           <li><a href="#line-education">Education</a></li>
+          <li><a href="#line-certifications">Certifications</a></li>
           <li><a href="#line-stack">Stack</a></li>
           <li><a href="#line-projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -43,12 +47,12 @@
           <div>
             <figure class="body--main_container-main_image">
               <img
-                src="./assets/images/LFR-transparente.png"
+                src="./assets/images/LFR-transparente.webp"
                 alt="Luis Felipe Rojas"
               />
             </figure>
           </div>
-          <div class="body--main_container-main_info">
+          <aside class="body--main_container-main_info">
             <h1>Hi, I'm Luis Felipe Rojas</h1>
             <p>
               Frontend developer (React) building responsive things for web
@@ -60,7 +64,26 @@
               />
             </figure>
             <h2>Medellín - Colombia</h2>
-          </div>
+            <article class="body--main_container-main_info_links">
+              <a
+                href="https://www.linkedin.com/in/luis-felipe-rojas-gonzalez-69213b66/"
+              >
+                <figure class="info--links">
+                  <img src="./assets/icons/linkedin-brands.svg" alt="Linkedin" />
+                </figure>
+              </a>
+              <a href="https://github.com/LuisFelipeRojasG">
+                <figure class="info--links">
+                  <img src="./assets/icons/github-brands.svg" alt="GitHub" />
+                </figure>
+              </a>
+              <a href="https://twitter.com/latisstingrey">
+                <figure class="info--links">
+                  <img src="./assets/icons/x-twitter-brands.svg" alt="X" />
+                </figure>
+              </a>
+            </article>
+          </aside>
         </section>
         <hr id="line-about" />
         <section class="body--main_container-about">
@@ -83,12 +106,6 @@
               href="./document/CV - Luis Felipe Rojas_Frontend Developer.pdf"
               download="CV-Luis Felipe Rojas_Frontend Developer"
               >Download CV
-            </button>
-            <button 
-              class="CV_Button"
-              id="certifications"
-              >
-              Certifications
             </button>
           </div>
         </section>
@@ -186,6 +203,46 @@
                 </div>
               </div>
             </article>
+          </div>
+        </section>
+        <hr id="line-certifications" />
+        <section class="body--main_container-certifications" id="dialogCertifications">
+          <h1>Certifications</h1>
+          <p>My certifications</p>
+          <div class="certifications_container">
+            <div class="container swiper">
+              <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/Desarrollador_front-end_META.webp" alt="Certification Front-end Developer of META" />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/Introd_desarrollo_frontend.webp" alt="Certification Introduction to Front-end Developer " />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/HTML_y_CSS .webp" alt="Certification HTML and CSS" />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/Programación_javascript.webp" alt="Certification JavaScript" />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/Control_versiones_git.webp" alt="Certification Git" />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/React_básico.webp" alt="Certification React basic" />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/React_avanzado.webp" alt="Certification advanced React" />
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <img class="card-image" src="./assets/certifications/Principios_UX_UI.webp" alt="Certification UX/UI principles" />
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
           </div>
         </section>
         <hr id="line-stack" />
@@ -286,7 +343,7 @@
                 <div class="container_item">
                   <figure>
                     <img
-                      src="./assets/images/LittleLemon01.png"
+                      src="./assets/images/LittleLemon01.webp"
                       alt="Little Lemon Restaurant"
                     />
                   </figure>
@@ -330,7 +387,7 @@
                 <div class="container_item">
                   <figure>
                     <img
-                      src="./assets/images/platziTravelCard.png"
+                      src="./assets/images/platziTravelCard.webp"
                       alt="platzi Travel"
                     />
                   </figure>
@@ -372,7 +429,7 @@
                 <div class="container_item">
                   <figure>
                     <img
-                      src="./assets/images/todoMachineCard.png"
+                      src="./assets/images/todoMachineCard.webp"
                       alt="To Do Machine"
                     />
                   </figure>
@@ -414,7 +471,7 @@
                 <div class="container_item">
                   <figure>
                     <img
-                      src="./assets/images/BatatabitCard.png"
+                      src="./assets/images/BatatabitCard.webp"
                       alt="batatabit"
                     />
                   </figure>
@@ -489,29 +546,9 @@
           </div>
         </section>
       </div>
-      <dialog class="dialogCertifications" id="dialogCertifications">
-        <Section class="dialogCertifications--slider">
-          <div class="dialogCertifications--slider_container">
-            <article class="dialogCertifications--slider_card">
-              <img src="./assets/certifications/certification_html_css.png" alt="Certification HTML and CSS" />
-            </article>
-            <article>
-              <img src="./assets/certifications/certification_react.png" alt="Certification React" />
-            </article>
-            <article>
-              <img src="./assets/certifications/certification_tailwind.png" alt="Certification Tailwind" />
-            </article>
-            <article>
-              <img src="./assets/certifications/certification_git.png" alt="Certification Git" />
-            </article>
-          </div>
-          <span class="arrowLeftCertifications slider_button"></span>
-          <span class="arrowRightCertifications slider_button"></span>
-        </Section>
-        <button class="close" id="closeCertifications">Close</button>
-      </dialog>
     </main>
     <footer id="contact">
+      <!--
       <a
         href="https://www.linkedin.com/in/luis-felipe-rojas-gonzalez-69213b66/"
       >
@@ -528,8 +565,10 @@
         <figure class="footer--links">
           <img src="./assets/icons/signo-de-twitter.png" alt="Twitter" />
         </figure>
-      </a>
+      </a> -->
     </footer>
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
