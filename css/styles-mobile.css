@@ -400,15 +400,15 @@ hr {
     font-size: 3rem;
 }
 
-.language_container {
+.language_container-icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: auto;
-    margin-bottom: 80px;
+    height: auto;   
+    margin-top: 40px;
 }
 
 .language_item {
@@ -425,7 +425,10 @@ hr {
 
 .language_item figure img {
     width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 .language_item p {
@@ -574,7 +577,7 @@ hr {
 
 .project--card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -601,11 +604,10 @@ hr {
 
 .projects_description {
     display: flex;
-    height: 235px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .projects_description h1{
@@ -614,21 +616,9 @@ hr {
     padding: 5px;
 }
 
-.projects_description h3{
-    font-size: 1.5rem;
-    padding: 5px;
-}
-
-.projects_description footer {
-    width: 100%;
-    height: auto;
-    background-color: var(--paper-dark-secundary);
-}
-
 .projects_description p{
     font-size: 1.5rem;
     margin-bottom: 10px;
-    padding: 5px;
 }
 
 .projects_description img {
@@ -637,7 +627,17 @@ hr {
     padding: 10px;
 }
 
-.projects_description .card_button {
+.projects_description--footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.projects_description--footer .card_button {
     width: 60px;
     height: 30px;
     margin: 5px 30px;
@@ -653,25 +653,37 @@ hr {
 
 /******************** end proyects ******************/
 
-/********************* end main *******************/
+/********************* end main *********************/
 
-/************************ end Body ***************/
+/********************** end Body ********************/
 
-/************************ start Footer ***************/
+/********************* start Footer *****************/
 
-footer {
+.footer_container {
     grid-area: footer;
     position: sticky;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
-    height: 90px;
+    height: 190px;
     background-color: #2196f3;
+    color: var(--secundary-text-blue)
 }
 
-.footer--links {
-    margin: 0 20px;
+.footer_container--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--links img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /************************ end Footer ***************/
