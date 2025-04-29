@@ -38,6 +38,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
+    margin-top: 8vw;
 }
 
 .body--main_container-main_image {
@@ -129,6 +130,12 @@
     width: 90vw;
     height: 420px;
 }
+
+.card-list .card-item {
+    transition: all 0.4s ease;
+}
+
+
 
 /******************** end certifications ******************/
 

@@ -35,6 +35,14 @@ new Swiper('.card-wrapper', {
 
     loop: true,
     spaceBetween: 30,
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 0.7,
+        slideShadows: true,
+    },
   
     // Pagination points
     pagination: {
