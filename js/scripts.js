@@ -71,7 +71,7 @@ new Swiper('.card-wrapper', {
         },
     }
   
-  });
+});
 
 
 

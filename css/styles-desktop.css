@@ -69,7 +69,7 @@
 
 /**************** start about **********************/
 .body--main_container-about p {
-    padding: 0 100px;
+    padding: 0 20vw;
 }
 /****************** end about **********************/
 
@@ -149,7 +149,7 @@
 
 /******************** start proyects ******************/
 .container-projects {
-    padding: 0 50px;
+    padding: 0 20vw;
 }
 
 /******************** end proyects ******************/
