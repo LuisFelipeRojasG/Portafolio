@@ -29,6 +29,7 @@ function closeLinks() {
     barsMenuLine3.classList.toggle("active_bars_menu-line3");
 }
 
+
 //Para el slider de las certificaciones
 
 new Swiper('.card-wrapper', {

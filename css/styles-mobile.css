@@ -81,12 +81,13 @@ body {
     list-style: none;
     text-align: center;
     margin: 30px 0;
-}
-
-.body--header-bars_links a{
     font-size: 2rem;
     font-weight: bold;
     text-decoration-style: none;
+}
+
+.body--header-bars_links a{
+    
     color: var(--secundary-text-blue);
 }
 

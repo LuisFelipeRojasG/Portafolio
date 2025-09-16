@@ -29,6 +29,10 @@
     margin: 0 30px;
 }
 
+.body--header-bars_links ul li a:hover {
+    color: var(--paper-dark-secundary);
+}
+
 /************************ end Header ***************/
 
 /************************ start introd ***************/
